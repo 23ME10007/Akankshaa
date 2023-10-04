@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .basic_styling_body{
+            background-color: lightgoldenrodyellow;
+        }
+        
+        
+        .container{
+            width:90%;
+            text-align: center;
+            
+        }
+        .heading{
+
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 35px;
+        margin: 25px 0;
+        text-decoration-line: underline;
+
+
+
+        }
+
+        .top-content{
+            background-color: bisque;
+            width: 90%;
+            margin:0 auto 20px auto;
+            height:60px;
+            display:flex;
+            align-items: center;
+            border-radius:5px;
+            box-shadow: 2px 2px 5px bisque;
+            
+
+
+        }
+        h3{
+            height: 100%;
+            background-color: goldenrod;
+            line-height: 60px;
+            padding: 0 25px;
+            
+        }
+
+        label{
+            display: inline-block;
+            height:100%;
+            padding:0 15px;
+            margin: 0 25px;
+            line-height: 60px;
+            cursor: pointer;
+            transition: .6s;
+
+
+        }
+
+        label:hover{
+            color:darkgoldenrod;
+
+        }
+
+        
+
+
+        input{
+            display: none;
+        }
+        .photos{
+            color: darkgoldenrod;
+        }
+        .photo :hover{
+            transition: 0.3s;
+            color: black;
+        }
+
+
+        .photo-gallery{
+            margin: auto;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
+        .pic img{
+            width: 99%;
+            height:95%;
+        }
+
+        img{
+            float: left;
+            width:  250px;
+            height: 250px;
+            object-fit: cover;
+            box-shadow: 2px 2px 5px  red;
+            
+
+            }
+        
+        
+
+        
+
+
+
+
+
+
+
+    </style>
+
+    
+</head>
+<body class="basic_styling_body">
+    
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2">
+    <input type="radio" name="photos" id="check3">
+    <input type="radio" name="photos" id="check4">
+
+
+<div class="container">
+    <h1 class="heading">A sneak-peak into my life</h1>
+    <div class="top-content">
+        <h3>Photos dump</h3>
+
+<label for="check1">All photos</label>
+<label for="check2">Family photos</label>
+<label for="check3">Childhood nostalgia</label>
+<label for="check4">College memories</label>
+
+    </div>
+    <div class="photo-gallery">
+        <div class="pic fam">
+            <img src="my photos/mypic1.jpg">
+        </div>
+        <div class="pic fam">
+            <img src="my photos/mypic2.jpg">
+        </div>
+        <div class="pic all">
+            <img src="my photos/mypic3.jpg">
+        </div>
+        
+        <div class="pic fam">
+            <img src="my photos/mypic5.jpg">
+        </div>
+        <div class="pic fam">
+            <img src="my photos/mypic6.jpg">
+        </div>
+        <div class="pic col">
+            <img src="my photos/mypic7.jpg">
+        </div>
+        <div class="pic col">
+            <img src="my photos/mypic8.jpg">
+        </div>
+        <div class="pic col">
+            <img src="my photos/mypic9.jpg">
+        </div>
+        <div class="pic fam">
+            <img src="my photos/mypic10.jpg">
+        </div>
+        <div class="pic Child">
+            <img src="my photos/mypic11.jpg">
+        </div>
+        <div class="pic Child">
+            <img src="my photos/mypic12.jpg">
+        </div>
+        <div class="pic Child">
+            <img src="my photos/mypic13.jpg">
+        </div>
+        <div class="pic col">
+            <img src="my photos/mypic16.jpg">
+        </div>
+        <div class="pic col">
+            <img src="my photos/mypic15.jpg">
+        </div>
+        <div class="pic fam">
+            <img src="my photos/mypic17.jpg">
+        </div>
+        <div class="pic fam">
+            <img src="my photos/mypic18.jpg">
+        </div>
+        
+
+    </div>
+
+</div>
+<br>
+<br>
+    
+
+
+</body>
+</html>
